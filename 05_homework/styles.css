@@ -1,0 +1,34 @@
+  
+body{background-color: #121116;
+    color: #fefbfc;
+    margin: 0;}
+    
+    .logo img {display: block;
+        margin: 120px auto  51px auto;}
+    
+    .center{ display: block;
+        
+        margin: 0 auto  21px auto;}
+    
+    .tx{font-family: "Open sans";
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 auto  20px auto;}   
+    
+    hr{width: 230px;}
+    
+    ul.network{text-align: center;
+        padding: 0px ;}
+    
+    li.network {list-style-type: none; 
+        display: inline;
+        padding: 15px;}
+    
+    .cp{font-family: "Open sans";
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        margin: 85px auto  38px auto;}   
+    
+    .cyan{color:#19c8fa}
