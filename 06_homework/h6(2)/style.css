@@ -1,0 +1,108 @@
+body{margin: 0px;}
+
+
+
+.name {background-color: #4A4F56;
+    width: 100vw;
+    height: 20vh;
+}
+
+h1{color:#EB7E7F;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    text-align: center;
+    margin: 0px auto 5px auto;
+    padding-top: 20px;
+}
+
+h3{color:#EB7E7F;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    text-align: center;
+    margin: 5px auto 20px auto;
+}
+
+.list{background-color: #3B3F45;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.list>form>ul{margin: 0px auto 5px auto;
+    text-align:  center;
+    padding: 40px 0px 0px 0px;
+}
+    
+.item{list-style-type: none;
+    height: 10vh;
+    width: 70vw;
+    margin: 0px auto 0px auto;
+    background-color: #7A7593;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    text-align: left;
+}
+
+.item:nth-of-type(odd){list-style-type: none;
+    height: 10vh;
+    width: 70vw;
+    margin: 0px auto 0px auto;
+    background-color: #88839E;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    text-align: left;
+}
+
+input{width: 24px;
+    height: 24px;
+    margin: 14px 14px 0px 14px;
+}
+
+label{color:white;
+font-size: 20px;
+padding: 0px auto 0px auto;
+}
+
+ul li label:after{content: " ";
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    color:white;
+    font-size: 15px;
+}
+
+ul li:nth-child(1) label:after{content: " (for the next lesson about CSS)";}
+
+ul li:nth-child(2) label:after{content: " (for more CSS manipulation)";}
+
+ul li:nth-child(3) label:after{content: " (because they are awesome)";}
+
+ul li:nth-child(4) label:after{content: " (hmm...they always)";}
+
+ul li:nth-child(6) label:after{content: "(for my friends)";}
+
+
+.button{height: 10vh;
+    width: 70vw;
+    background-color: #4a4f56;
+    color: #EB7E7F;
+    border-style: none;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    font-size: 20px;
+    display:block;
+    margin: 40px auto 0px auto;
+}
+    
+*{transition: all .1s ease-in;
+}
+
+li.item:hover{border-top: white solid;
+border-bottom: white solid;
+background-color: #625E77;
+}
+
+li.item:active{border-top: white solid;
+    border-bottom: white solid;
+    background-color: #EB7E7F;
+}
+
+input:checked + label{text-decoration: line-through;
+color: #9E9EB5;}
+
+input:checked + label:after{color: #9E9EB5;}
+    
+
+
