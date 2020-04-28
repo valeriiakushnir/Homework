@@ -1,0 +1,21 @@
+body{background-color: #9a0202;
+font-size: 16px;
+color: white;}
+
+.center {display:block; margin:auto;} 
+
+ul.nav{background-color: black;}
+
+li.nav {
+    list-style-type: none; 
+    display: inline;}
+
+img.nav{height: 130px;
+    width: 205;
+    padding: 15px 15px 0px 15px;}
+
+figure{width: 173px;
+    display: inline;}
+
+figcaption{display: inline;
+text-align: center;}
