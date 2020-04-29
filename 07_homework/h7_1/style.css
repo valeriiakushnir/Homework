@@ -1,0 +1,94 @@
+* {margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
+
+.advantages { 
+    background-color: #ffffff;
+}
+
+.advantages_head{margin: 70px auto 100px auto;
+    text-align: center;
+}
+
+.text1{font-family: Montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.5;
+    letter-spacing: 4.8px;
+    color: #898f99;
+    margin-bottom: 35px ;
+}
+
+h1{font-family: Montserrat;
+    font-size: 48px;
+    line-height: 0.63;
+    letter-spacing: 4.8px;
+    color: #0ec8cb;
+}
+
+.text2{font-family: "PT Sans";
+    width: 512px;
+    height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #999999;
+    margin: 44px auto;
+}
+
+.advantages_list{margin: 0px auto 130px auto;
+}
+
+ul{display: flex;
+    justify-content: stretch;
+    list-style-type: none;
+    padding-left: 70px;
+}
+
+.advantages_item{ width: 236px;
+    height: 420px;
+    border: solid 1px #ececec;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.advantages_icon{
+    width: 66px;
+    height: 66px;
+    margin: 50px auto;
+}
+
+.advantages_title{
+    margin: 5px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 21px;
+    color: #1b1b1b;
+}
+
+.advantages_text{width: 174px;
+    height: 101px;
+    font-family: "PT Sans";
+    font-size: 14px;
+    line-height: 1.57; 
+    color: #777777;
+    margin: 34px auto;
+}
+
+ .advantages_item:hover{border: solid 1px #0ec8cb;
+    background-color: #0ec8cb;
+}
+
+.advantages_item:hover .advantages_icon svg path{
+    fill:#ffffff;
+}
+
+.advantages_item:hover .advantages_text{
+    color:#ffffff;
+}
+
+.advantages_item:hover .advantages_title{
+    color:#ffffff;
+}
