@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #e5eeee;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.homework{
+    background-color: #9F5B76;
+    text-decoration: none;
+    padding: 15px; 
+    text-align: right;
+}
+
+.homework a{
+    padding: 10px 20px;
+    background-color: #5E3646;
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.homework a:nth-child(2){
+    border-bottom: 3px solid white;
+}
+
+.homework a:hover{
+    background-color:white;
+    color:  #5E3646;
+}
+
+
+
+.form{
+    
+    max-width: 400px;
+    background-image: url(assets/1.jpg);
+    background-size: cover;
+    padding: 50px 70px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
+}
+
+
+.form:before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width:85%;
+    height: 70px;
+    opacity: .8;
+    box-shadow: 0 0 70px 20px rgba(0, 0, 0, 0.9);
+}
+
+.form:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(32deg, #3023ae 0%, #c86dd7 100%);
+    opacity: .8;
+}
+
+
+.form>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+.form_modal {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+.modal_item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.modal_link {
+    color: #e1c2f1;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.modal_link:hover {
+    color: #fbf6e4;
+}
+
+.modal_link--active {
+    position: relative;
+    color: #fbf6e4;
+}
+
+.modal_deliver{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 60px;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    background-color: #e66a64;
+    transition: .3s ease;
+}
+
+.form_sign {
+    margin-top: 50px;
+}
+
+.form_join:target {
+    display: block;
+}
+
+
+.form_join:not(:target){
+   display: none;
+}
+
+
+.form_join{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form_label {
+    color: #fbf6e4;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form_label--checkbox {
+    font-size: 13px;
+}
+
+.form_label--checkbox:hover .form_checkbox {
+    background-color: #e66a64;
+}
+
+.form_input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    color: white;
+    margin: 7px 0 0;
+    padding: 10px;
+}
+
+.form_input:focus {
+    border-color: #23ae92;
+}
+
+.form_error {
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.form_input:invalid+.form_error {
+    visibility: visible;
+}
+
+
+.form_controls {
+    padding-bottom: 2px;
+}
+
+.form_controls--checkbox {
+    padding: 5px 0;
+    color: white;
+    font-size: 13px;
+}
+
+[type=checkbox]{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+ .form_checkbox img{
+   display: none;
+}
+
+
+.form_label--checkbox {
+    display: flex;
+    align-items: center;
+}
+
+
+.checkbox:checked .form_checkbox img{
+    display: block;
+}
+
+.checkbox:focus .form_checkbox {
+    border: 2px solid #e66a64;
+}
+
+.form_checkbox {
+    width: 16px;
+    height: 16px;
+    background-color: #23ae92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    border: 2px solid #23ae92;
+    transition: ease .3s font-size;
+}
+
+.form_controls--submit {
+    padding-top: 36px;
+}
+
+.form_button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.form_button{
+    background-color: #23ae92;
+    color: #fbf6e4;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    padding: 9px;
+    border: 2px solid #23ae92;
+}
+
+.form_button:focus {
+    border: 2px solid #e66a64;
+}
+
+.form_button:hover {
+    background-color: #e66a64;
+}
+
+.form_link {
+    color: #b9b9cc;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    text-decoration: none;
+    position: relative;
+}
+
+.form_advanced {
+    padding-bottom: 10px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_advanced:hover .form_link:not(:hover):after {
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.form_link:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 1px;
+    width: 100%;
+    background-color: currentColor;
+    pointer-events: none;
+    transition: ease .3s;
+    transition-property: transform, opacity;
+}

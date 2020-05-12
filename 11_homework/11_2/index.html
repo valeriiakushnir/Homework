@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="homework">
+            <a href="/index11.html"> homework_1</a>
+            <a href="11_2/index.html"> homework_2</a>
+        </div>
+        <div class="form">
+            <div class="form_title">
+                <ul class="form_modal">
+                    <li class="modal_item">
+                        <a href="#sign" class="modal_link"> Sign in </a>
+                    </li>
+                    <li class="modal_item">
+                        <a href="#join" class="modal_link"> Join us </a>
+                    </li>
+                    <li class="modal_deliver"></li>
+                </ul>
+            </div>
+            <div class="form_sign">
+                <form action="#" method="GET">
+                    <div class="form_controls">
+                        <label class="form_label" for="username">Username</label>
+                        <input class="form_input" minlength="3" type="text" name="username" id="username">
+                        <div class="form_error">error</div>
+                    </div>
+                    <div class="form_controls">
+                        <label class="form_label" for="password">Password</label>
+                        <input class="form_input" required type="password" name="password" id="password">
+                        <div class="form_error">error</div>
+                    </div>
+                    <div class="form_controls--checkbox">
+                        <input checked class="checkbox" type="checkbox" name="keep" id="keep">
+                        <label class="form_label--checkbox" for="keep">
+                            <span class="form_checkbox">
+                                <img src="assets/2.png" alt="keep">
+                            </span> Keep me in signed in
+                        </label>
+                    </div>
+                    <div class="form_controls--submit">
+                        <button type="submit" class="form_button">Sing in</button>
+                    </div>
+                    <div class="form_advanced">
+                        <a href="#" class="form_link">Forgot password</a>
+                        <a href="#join" class="form_link">Create an account</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_join" id="join">
+                <form action="#" method="get">
+                    <div class="form_controls">
+                        <label class="form_label" for="Username">Username</label>
+                        <input class="form_input" minlength="3" type="text" name="Username" id="Username">
+                        <div class="form_error">error</div>
+                    </div>
+                    <div class="form_controls">
+                        <label class="form_label" for="Password">Password</label>
+                        <input class="form_input" required type="password" name="Password" id="Password">
+                        <div class="form_error">error</div>
+                    </div>
+                    <div class="form_controls">
+                        <label class="form_label" for="repeat_password">Repeat password</label>
+                        <input class="form_input" required type="repeat_password" name="repeat_password"
+                            id="repeat_password">
+                        <div class="form_error">error</div>
+                    </div>
+                    <div class="form_submit">
+                        <button type="submit" class="form_button">Join in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
