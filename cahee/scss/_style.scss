@@ -1,0 +1,377 @@
+/*MAIN BLOCKS*/
+
+.section {
+  height: 100vh;
+  padding: 0 8%;
+  overflow: hidden;
+
+  @include tablet {
+    padding: 0 6%;
+  }
+
+  @include mobile {
+    padding: 0 4%;
+  }
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 5.625em;
+
+  @include laptop {
+    font-size: 5em;
+  }
+
+  @include tablet {
+    font-size: 4em;
+  }
+
+  @include mobile {
+    font-size: 3.5em;
+  }
+}
+
+.text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.063em;
+  line-height: 1.7;
+
+  @include tablet {
+    font-size: 1.2em;
+  }
+
+  @include tablet {
+    font-size: 1em;
+  }
+
+  @include mobile {
+    font-size: 0.8em;
+  }
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+  @include laptop {
+    padding: 15px 30px;
+  }
+
+  @include tablet {
+    padding: 10px 50px;
+    font-size: 1em;
+  }
+
+  @include mobile {
+    width: 90%;
+    padding: 10px 5px;
+    font-size: 0.5em;
+  }
+}
+
+.logo {
+  color: $text-color--dark;
+  font-family: "Pacifico", cursive;
+  font-size: 3em;
+
+  @include tablet {
+    font-size: 2.5em;
+  }
+
+  @include mobile {
+    font-size: 2em;
+  }
+}
+
+/*HEADER*/
+
+.header {
+  background-image: url(/assets/images/1.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+
+  @include tablet {
+    background-position-x: 30px;
+  }
+
+  @include mobile {
+    background-position-x: -180px;
+    background-position-y: 30px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(0, -50%);
+
+    @include tablet {
+      visibility: hidden;
+    }
+
+    @include mobile {
+      visibility: hidden;
+    }
+  }
+
+  &__content {
+    max-width: 385px;
+    padding-top: 8%;
+    @include elementDistance;
+
+    @include tablet {
+      max-width: 75%;
+      padding-top: 10%;
+    }
+
+    @include mobile {
+      padding-top: 10%;
+    }
+
+    &__title {
+      font-size: 3.75em;
+      font-weight: 900;
+
+      @include tablet {
+        font-size: 3em;
+      }
+
+      @include mobile {
+        font-size: 2.5em;
+      }
+    }
+
+    &__btn {
+      @include mobile {
+        margin-top: 60%;
+      }
+    }
+  }
+}
+
+.nav {
+  width: 50%;
+
+  @include laptop {
+    width: 55%;
+  }
+
+  @include tablet {
+    visibility: hidden;
+  }
+
+  @include mobile {
+    visibility: hidden;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.56em;
+  }
+
+  &__link {
+    padding-top: 8px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: $text-color--dark;
+  }
+
+  &__link:hover {
+    border-top: 3px solid $btn-color--orange;
+  }
+}
+
+/*ABOUT US*/
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  background-color: #00b3b3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include laptop {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+  &__image {
+    @include laptop {
+      transform: translateY(-380px);
+    }
+    @include tablet {
+      transform: translateY(-410px);
+    }
+
+    @include mobile {
+      transform: translateY(-300px);
+    }
+  }
+
+  &__text {
+    @include laptop {
+      padding-left: 10%;
+      transform: translateY(-400px);
+    }
+
+    @include tablet {
+      padding-left: 5%;
+      transform: translateY(-450px);
+    }
+    @include mobile {
+      padding-left: 5%;
+      transform: translateY(-450px);
+    }
+    &__title {
+      padding-bottom: 35px;
+
+      @include mobile {
+        padding-bottom: 60px;
+        text-align: center;
+        color: $text-color--dark !important;
+      }
+    }
+  }
+}
+.services {
+  background-color: #70bfff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__list {
+    flex: 0 0 40%;
+    color: #262626;
+
+    @include laptop {
+      flex: 0 0 50%;
+    }
+
+    @include tablet {
+      padding-left: 5%;
+    }
+    @include mobile {
+      padding-left: 5%;
+    }
+  }
+
+  &__text {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+    @include laptop {
+      flex: 0 0 30%;
+      transform: translateX(200px);
+    }
+
+    @include tablet {
+      padding-left: 5%;
+      transform: translateY(-450px);
+    }
+    @include mobile {
+      padding-left: 5%;
+      transform: translateY(-450px);
+    }
+
+    &__title {
+      position: absolute;
+      width: 119%;
+      top: 50%;
+      left: -20px;
+      transform: translate(0, -50%);
+
+      @include laptop {
+        flex: 0 0 30%;
+        transform: translateX(-150px);
+      }
+
+      @include tablet {
+        padding-left: 5%;
+        transform: translateY(-450px);
+      }
+      @include mobile {
+        padding-left: 5%;
+        transform: translateY(-450px);
+      }
+    }
+  }
+}
+
+.list {
+  &__item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 6%;
+    font-size: 20px;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: #9d9d9d;
+      border: none;
+      height: 100px;
+      width: 1px;
+      position: absolute;
+      top: 50%;
+      right: 100px;
+      transform: translate(0, -50%);
+    }
+
+    &:hover {
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+
+    &__icon {
+      font-size: 45px;
+    }
+
+    &__name {
+      font-weight: bold;
+      max-width: 60%;
+    }
+  }
+}
+
+.text--light {
+  color: $text-color--light;
+}
+
+.text--dark {
+  color: $text-color--dark;
+}
+
+.btn--orange {
+  background-color: $btn-color--orange;
+}

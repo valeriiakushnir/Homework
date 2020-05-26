@@ -1,0 +1,12 @@
+@mixin flexHalfContainers {
+  display: flex;
+  & > * {
+    width: 50%;
+  }
+}
+
+@mixin elementDistance {
+  & > * {
+    margin-top: 30px;
+  }
+}
