@@ -1,0 +1,17 @@
+//! Sass
+@import "sass/variables.scss"; //! Sass Variables
+@import "sass/mixins.scss"; //! Sass Mixins
+
+//! Base
+@import "base/reset.scss"; //!Reset/normalize
+@import "base/body.scss"; //!Style only for body
+@import "base/basic.scss"; //!Стилі для загальних блоків
+@import "base/typography.scss"; //!Font and typography
+
+//! Components
+@import "components/buttons.scss"; //! Buttons
+@import "components/components.scss"; //! Сomponents (menu...)
+@import "components/modules.scss"; //! Modules (grid scheme)
+
+//! Section
+@import "section/header.scss"; //! Header

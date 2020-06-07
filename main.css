@@ -1,0 +1,249 @@
+* {
+  transition: top 1s ease-out 0.5s;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: Lato-Black;
+  src: url("./assets/fonts/Lato-Black.ttf");
+}
+.wrapper {
+  background-color: #9789f9;
+  height: 1000px;
+  width: 100%;
+}
+
+.content__container {
+  max-width: 1065px;
+  padding-top: 165px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.content__item {
+  width: 33%;
+  background-color: #f5f4f9;
+  box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.25);
+  position: relative;
+  margin: 0px 11px;
+}
+.content__item:hover .content__popular .popular__box {
+  visibility: visible;
+}
+.content__item:hover .content__btn {
+  bottom: 70px;
+}
+.content__item:hover .content__foot {
+  display: block;
+}
+.content__item:hover .content__header {
+  margin-bottom: 42px;
+}
+.content__item:hover .content__icon {
+  padding-bottom: 30px;
+}
+.content__popular {
+  position: absolute;
+  left: 73%;
+  top: 10px;
+  z-index: 9;
+}
+.content__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.content__price {
+  padding-top: 40px;
+}
+.content__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  padding-top: 25px;
+}
+.content__box {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding-top: 35px;
+  background-image: url(assets/img/4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 45px;
+  margin-bottom: 60px;
+}
+.content__icon {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-family: "themify";
+}
+.content__list {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.content__link {
+  padding: 20px 0px;
+}
+.content__btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  background-color: #6fcffb;
+  width: 203px;
+  text-align: center;
+  padding: 20px 46px;
+  border-radius: 30px;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.content__btn:hover {
+  background-color: #fd8d7b;
+}
+.content__foot {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  color: #a9a9a9;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.popular {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+.popular__letter {
+  font-size: 24px;
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  transform: translate(-6%, -50%);
+}
+.popular__box {
+  visibility: hidden;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.popular__text {
+  font-size: 16px;
+  position: absolute;
+  left: 33.5%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.price {
+  height: 83px;
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price__dollar {
+  align-self: flex-start;
+  font-size: 24px;
+}
+.price__number {
+  font-size: 60px;
+}
+.price__hr {
+  align-self: flex-end;
+  font-size: 16px;
+}
