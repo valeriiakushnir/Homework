@@ -262,6 +262,17 @@
   justify-content: space-around;
   align-items: center;
 
+  @include laptop {
+    flex: 0 0 50%;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+  @include mobile {
+    flex-direction: column;
+  }
+
   &__list {
     flex: 0 0 40%;
     color: #262626;

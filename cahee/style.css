@@ -444,6 +444,21 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .services {
+    flex-direction: column;
+  }
+}
+@media (max-width: 479px) {
+  .services {
+    flex-direction: column;
+  }
+}
 .services__list {
   flex: 0 0 40%;
   color: #262626;
