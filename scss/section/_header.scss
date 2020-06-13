@@ -1,0 +1,197 @@
+.header {
+  background-image: url(assets/img/1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  padding-top: 266px;
+  padding-bottom: 135px;
+
+  @include mobile {
+    padding-top: 100px;
+    padding-bottom: 55px;
+  }
+
+  @include tablets {
+    padding-top: 150px;
+    padding-bottom: 75px;
+  }
+
+  @include laptopS {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  @include laptopL {
+    padding-top: 266px;
+    padding-bottom: 135px;
+  }
+
+  &__container {
+    max-width: 62.72%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      max-width: 100%;
+    }
+
+    @include tablets {
+      max-width: 100%;
+    }
+
+    @include laptopS {
+      max-width: 100%;
+    }
+
+    @include laptopL {
+      max-width: 100%;
+    }
+  }
+
+  &__box {
+    text-align: center;
+    font-family: $jsans;
+    color: $light-cl;
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 48px;
+    padding-bottom: 15px;
+    letter-spacing: 4.8px;
+
+    @include mobile {
+      font-size: 36px;
+    }
+
+    @include tablets {
+      font-size: 40px;
+    }
+
+    @include laptopS {
+      font-size: 42px;
+    }
+
+    @include laptopL {
+      font-size: 44px;
+    }
+  }
+
+  &__desc {
+    padding-bottom: 50px;
+  }
+
+  &__form-wrapper {
+    width: 58.5%;
+    @include mobile {
+      max-width: 80%;
+      width: 80%;
+    }
+
+    @include tablets {
+      max-width: 90%;
+      width: 80%;
+    }
+
+    @include laptopS {
+      max-width: 80%;
+    }
+
+    @include laptopL {
+      max-width: 80%;
+    }
+  }
+
+  &__form {
+    font-family: $jsans;
+    font-weight: 300;
+    background-color: $light-cl;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid $light-cl;
+  }
+
+  &__input {
+    width: 77%;
+    height: 60px;
+    text-align: center;
+    letter-spacing: 2.8px;
+    color: #999999;
+
+    @include mobile {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    &:hover {
+      color: black;
+    }
+
+    &:focus {
+      border: 3px solid $blue-cl;
+      color: black;
+    }
+  }
+
+  &__btn {
+    width: 23%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $aleo;
+    text-transform: uppercase;
+    color: $light-cl;
+    font-size: 14px;
+    height: 60px;
+    background: $blue-cl;
+
+    @include mobile {
+      font-size: 0px;
+    }
+    &:hover {
+      background-color: #3a55cc;
+    }
+  }
+
+  &__search {
+    font-size: 20px;
+    padding-left: 19px;
+
+    @include mobile {
+      padding-left: 4px;
+    }
+
+    @include tablets {
+      padding-left: 6px;
+    }
+
+    @include laptopS {
+      padding-left: 8px;
+    }
+
+    @include laptopL {
+      padding-left: 10px;
+    }
+  }
+
+  &__scroll {
+    padding-top: 120px;
+    letter-spacing: 2.8px;
+    font-family: $jsans;
+    font-weight: 100;
+    color: $light-cl;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__icon {
+    padding-top: 15px;
+    font-size: 6.7px;
+  }
+}

@@ -1,0 +1,83 @@
+.block {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  padding-top: 230px;
+  padding-bottom: 100px;
+
+  @include mobile {
+    padding-top: 130px;
+    padding-bottom: 40px;
+  }
+
+  @include tablets {
+    padding-top: 170px;
+    padding-bottom: 50px;
+  }
+
+  @include laptopS {
+    padding-top: 190px;
+    padding-bottom: 60px;
+  }
+
+  @include laptopL {
+    padding-top: 200px;
+    padding-bottom: 70px;
+  }
+
+  &__box {
+    width: 48.65%;
+    background-color: rgba($color: $gray2-cl, $alpha: 0.9);
+    padding: 50px 30px;
+    font-family: $jsans;
+    color: $light-cl;
+    font-weight: 300;
+
+    @include mobile {
+      width: 100%;
+    }
+
+    @include tablets {
+      width: 80.65%;
+    }
+
+    @include laptopS {
+      width: 50.65%;
+    }
+
+    @include laptopL {
+      width: 70.65%;
+    }
+  }
+
+  &__country {
+    font-family: 20px;
+    letter-spacing: 1.2px;
+    padding-bottom: 30px;
+  }
+  &__title {
+    font-family: 20px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  &__desc {
+    font-family: 16px;
+    line-height: 26px;
+    padding-bottom: 50px;
+  }
+
+  &--first {
+    background-image: url(assets/img/6.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-start;
+  }
+
+  &--second {
+    background-image: url(assets/img/7.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+  }
+}

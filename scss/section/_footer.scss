@@ -1,0 +1,60 @@
+.footer {
+  background-color: $gray2-cl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 50px;
+
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  @include tablets {
+    padding-top: 70px;
+    padding-bottom: 25px;
+  }
+
+  @include laptopS {
+    padding-top: 80x;
+    padding-bottom: 30px;
+  }
+
+  @include laptopL {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  &__logo {
+    letter-spacing: 3.36px;
+    padding-bottom: 15px;
+  }
+
+  &__tag {
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: $light-cl;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 14px;
+    margin: 0 12.5px;
+
+    &:hover {
+      color: $blue-cl;
+    }
+  }
+}

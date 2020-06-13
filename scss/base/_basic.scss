@@ -1,0 +1,68 @@
+.wrapper {
+  width: 100%;
+  padding: 0 18.65%;
+
+  @include mobile {
+    padding: 0 4.865%;
+  }
+
+  @include tablets {
+    padding: 0 7.45%;
+  }
+
+  @include laptopS {
+    padding: 0 9%;
+  }
+
+  @include laptopL {
+    padding: 0 10%;
+  }
+}
+
+.logo {
+  font-family: $jsans;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: $light-cl;
+  letter-spacing: 2.4px;
+
+  @include mobile {
+    font-size: 14px;
+  }
+
+  @include tablets {
+    font-size: 16px;
+  }
+
+  @include laptopS {
+    font-size: 18px;
+  }
+
+  @include laptopL {
+    font-size: 18px;
+  }
+}
+
+.tag {
+  font-weight: 300;
+  letter-spacing: 6.82px;
+  font-size: 22px;
+  font-family: $jsans;
+
+  @include mobile {
+    font-size: 13px;
+  }
+
+  @include tablets {
+    font-size: 16px;
+  }
+
+  @include laptopS {
+    font-size: 17px;
+  }
+
+  @include laptopL {
+    font-size: 19px;
+  }
+}

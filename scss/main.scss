@@ -1,0 +1,21 @@
+//! Sass
+@import "scss/variables.scss"; //! Sass Variables
+@import "scss/mixins.scss"; //! Sass Mixins
+@import "scss/responsive.scss";
+//! Base
+@import "base/reset.scss"; //!Reset/normalize
+@import "base/body.scss"; //!Style only for body
+@import "base/basic.scss"; //!Стилі для загальних блоків
+@import "base/typography.scss"; //!Font and typography
+
+//! Components
+@import "components/buttons.scss"; //! Buttons
+
+//! Section
+@import "section/header.scss"; //! Header
+@import "section/nav.scss";
+@import "section/choose.scss";
+@import "section/advantages.scss";
+@import "section/block.scss";
+@import "section/review.scss";
+@import "section/footer.scss";

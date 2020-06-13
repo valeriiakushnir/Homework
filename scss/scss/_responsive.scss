@@ -1,0 +1,31 @@
+// ! <--------- Breakpoint responsive --------->
+// * Mixin for mobile screen
+@mixin mobile {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+// * Mixin for tablets screen
+@mixin tablets {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+// * Mixin for laptops S screen
+@mixin laptopS {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+// * Mixin for laptops L screen
+@mixin laptopL {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+// * Mixin for desktop screen
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

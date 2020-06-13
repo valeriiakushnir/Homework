@@ -1,0 +1,56 @@
+.btn {
+  width: 225px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: $aleo;
+  color: $light-cl;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablets {
+  }
+
+  @include laptopS {
+  }
+
+  @include laptopL {
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $blue-cl;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 109px;
+    height: 60px;
+    background-image: url(assets/img/9.svg);
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #496bfe;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

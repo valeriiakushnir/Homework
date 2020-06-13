@@ -1,0 +1,92 @@
+.advantages {
+  background-color: $gray1-cl;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include tablets {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include laptopS {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include laptopL {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $aleo;
+    font-size: 36px;
+    color: $light-cl;
+
+    @include mobile {
+      width: 70%;
+      font-size: 16px;
+      flex-direction: row;
+      background-color: $gray2-cl;
+      margin: 10px;
+    }
+
+    @include tablets {
+      font-size: 20px;
+    }
+
+    @include laptopS {
+      font-size: 26px;
+    }
+
+    @include laptopL {
+      font-size: 26px;
+    }
+  }
+
+  &__icon {
+    font-size: 58px;
+    padding-bottom: 35px;
+
+    @include mobile {
+      font-size: 30px;
+      padding: 30px 20px 30px 0px;
+    }
+
+    @include tablets {
+      font-size: 36px;
+      padding-bottom: 25px;
+    }
+
+    @include laptopS {
+      font-size: 46px;
+      padding-bottom: 30px;
+    }
+
+    @include laptopL {
+      font-size: 46px;
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.review {
+  background-image: url(assets/img/8.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 200px;
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  @include tablets {
+    padding-top: 60px;
+    padding-bottom: 140px;
+  }
+
+  @include laptopS {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+
+  @include laptopL {
+    padding-top: 100px;
+    padding-bottom: 180px;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $aleo;
+    color: $light-cl;
+    font-size: 36px;
+    padding-bottom: 100px;
+
+    @include mobile {
+      font-size: 18px;
+      padding-bottom: 40px;
+    }
+
+    @include tablets {
+      font-size: 24px;
+      padding-bottom: 60px;
+    }
+
+    @include laptopS {
+      font-size: 30px;
+      padding-bottom: 80px;
+    }
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    font-family: $jsans;
+    color: $light-cl;
+    font-weight: 300;
+    background-color: rgba($color: $gray2-cl, $alpha: 0.9);
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include tablets {
+      flex-direction: column;
+    }
+
+    @include laptopS {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    padding: 50px 60px;
+    background-color: $gray1-cl;
+    position: relative;
+
+    @include mobile {
+      padding: 40px 30px;
+    }
+
+    @include tablets {
+      padding: 50px 40px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 30px;
+    font-size: 18px;
+    padding-right: 10px;
+
+    @include mobile {
+      left: 0px;
+    }
+
+    @include tablets {
+      left: 10px;
+    }
+  }
+
+  &__desc {
+    text-indent: 30px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
