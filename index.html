@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<body>
-    <p> First
+  <body>
+    <a href="#" class="btn btn--open">Відкрити вікно</a>
+    <div class="modal-window">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos
+        maxime provident adipisci odio totam eveniet, fugiat cupiditate
+        aspernatur quam? Ad cupiditate unde quae repudiandae neque culpa ab
+        vitae eius.
+      </p>
+      <a href="#" class="btn btn--close">Закрити вікно</a>
+    </div>
 
-    </p>
-</body>
-
+    <div class="traffic-lights">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="170">
+        <path
+          fill="black"
+          d="m 0,0 50,0 0,120 -18,0 0,50 -14,0 0,-50 -18,0 z"
+        />
+        <circle
+          class="traffic-lights--red"
+          fill="#f00"
+          cx="25"
+          cy="22"
+          r="15"
+        />
+        <circle
+          class="traffic-lights--yellow"
+          fill="#808080"
+          cx="25"
+          cy="59"
+          r="15"
+        />
+        <circle
+          class="traffic-lights--green"
+          fill="#808080"
+          cx="25"
+          cy="96"
+          r="15"
+        />
+      </svg>
+      <a href="#" class="btn btn-traffic">Наступне світло</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
